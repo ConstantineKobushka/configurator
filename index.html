@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Configurator</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="imgholder" class="imgholder">
+      <img src="images/black.png" alt="Автомобиль">
+      <div class="model-summary">
+        <div class="model-name">Hundai</div>
+        <div class="model-specs" id="modelspecs"></div>
+        <div class="model-price" id="modelprice"></div>
+        <div class="model-price" id="modelpriceUSD"></div>
+        <div class="button">Заказать</div>
+      </div>
+    </div>
+
+    <form id="autoform" class="autoform">
+      <h2>Настрой авто для себя</h2>
+      <div class="inner">
+        <div class="col-1-of-3">
+          <h4>Двигатель</h4>
+          <div class="form-blok">
+            <input type="radio" name="engine" id="engine1400" value="624900" checked>
+            <label for="engine1400">1.4 л (100 л.с.)</label>
+          </div>
+          <div class="form-blok">
+            <input type="radio" name="engine" id="engine1600" value="749900">
+            <label for="engine1600">1.6 л (123 л.с.)</label>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <h4>Коробка</h4>
+          <div class="form-blok">
+            <input type="radio" name="transmission" id="transmission6MT" value="0" checked>
+            <label for="transmission6MT">Ручная, 6 ступеней (6МТ)</label>
+          </div>
+          <div class="form-blok">
+            <input type="radio" name="transmission" id="transmission6AT" value="125000">
+            <label for="transmission6AT">Автомат, 6 ступеней (6AТ)</label>
+          </div>
+        </div>
+
+        <div class="col-1-of-3">
+          <h4>Пакет (дополнительные опции)</h4>
+          <div class="form-blok">
+            <input type="radio" name="package" id="packageactive" value="0" checked>
+            <label for="packageactive">Active</label>
+          </div>
+          <div class="form-blok">
+            <input type="radio" name="package" id="packageactiveplus" value="85000">
+            <label for="packageactiveplus">Active Plus (кондиционер)</label>
+          </div>
+          <div class="form-blok">
+            <input type="radio" name="package" id="packageactivecomfort" value="130000">
+            <label for="packageactivecomfort">Comfort (климатконтроль)</label>
+          </div>
+        </div>
+      </div>
+
+      <h4>Цвет</h4>
+      <div class="form-block">
+        <div id="colorsselector" class="colorsselector">
+          <div class="coloritem colorblue" data-img-path="images/blue.png"></div>
+          <div class="coloritem colorwhite" data-img-path="images/white.png"></div>
+          <div class="coloritem colorred" data-img-path="images/red.png"></div>
+          <div class="coloritem colorblack" data-img-path="images/black.png"></div>
+          <div class="coloritem colorsilver" data-img-path="images/silver.png"></div>
+          <div class="coloritem colorbeige" data-img-path="images/beige.png"></div>
+          <div class="coloritem coloryellow" data-img-path="images/yellow.png"></div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

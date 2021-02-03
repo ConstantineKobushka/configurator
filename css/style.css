@@ -1,0 +1,132 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+  position: relative;
+}
+h2,
+h4 {
+  padding-left: 5px;
+}
+.imgholder {
+  width: 1100px;
+  margin: 0 auto;
+}
+.imgholder img {
+  width: 1000px;
+  object-fit: cover;
+  display: block;
+}
+.model-summary {
+  position: absolute;
+  width: 320px;
+  height: 195px;
+  top: 10px;
+  right: 10px;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.1);
+  border-radius: 10px;
+}
+.model-name {
+  color: blue;
+  font-size: 24px;
+  font-weight: 700;
+}
+.model-specs {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+.model-price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 5px;
+  color: red;
+}
+.imgholder img {
+  width: 100%;
+}
+.imgholder::before {
+  content: "Hundai";
+  position: absolute;
+  top: 0px;
+  left: 25px;
+  font-size: 100px;
+  font-weight: 700;
+  color: grey;
+  opacity: 0.2;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.button {
+  color: #fff;
+  background-color: blue;
+  border-radius: 16px;
+  padding: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  width: 120px;
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+input {
+  cursor: pointer;
+}
+.autoform {
+  margin-top: -60px;
+  border: 3px solid rgba(128, 128, 128, 0.3);
+}
+.inner {
+  display: flex;
+  justify-content: space-around;
+}
+.col-1-of-3 {
+  width: 350px;
+}
+.form-blok {
+  padding-left: 10px;
+  margin-top: 5px;
+}
+.colorsselector {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 25px;
+}
+.coloritem {
+  width: 70px;
+  height: 70px;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  border-radius: 50%;
+  margin-left: 30px;
+  cursor: pointer;
+}
+.colorblue {
+  background-color: blue;
+}
+.colorwhite {
+  background-color: white;
+}
+.colorred {
+  background-color: red;
+}
+.colorblack {
+  background-color: black;
+}
+.colorsilver {
+  background-color: silver;
+}
+.colorbeige {
+  background-color: beige;
+}
+.coloryellow {
+  background-color: yellow;
+}
